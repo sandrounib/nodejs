@@ -3,17 +3,17 @@ const { TIMEOUT } = require("dns");
 const nome = "Sandro"
 console.log(nome);
 
-// Execução de tempo limite
+//Execução de tempo limite
 
-// setTimeout(() =>{
-//     console.log ('Executando no tempo limite')    
-// },3000);
+setTimeout(() =>{
+    console.log ('Executando no tempo limite')    
+},3000);
 
-// // Intervalo definido
+// Intervalo definido
 
-// const int = setInterval(() => {
-//     console.log('Intervalo')
+const int = setInterval(() => {
+    console.log('Intervalo')
     
-// }, 100);
+}, 100);
 
 

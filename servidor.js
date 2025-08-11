@@ -1,9 +1,22 @@
 const http = require('http');
 const fs = require('fs');
+const _= require('lodash');
 
 const server = http.createServer((req,res) =>{
     //console.log("Solicitação realizada");
     console.log(req.url, req.method);
+
+
+    //testando lodash
+    const numero = _.random(0,50);
+    console.log(numero);
+
+
+    const saudacao = _.once(()=>{
+        console.log('Boas vindas ao nosso site');
+    });
+
+    saudacao();
 
 
     // //definindo o tipo de conteúdo do cabeçalho
